@@ -23,6 +23,9 @@ public class OracleDemo {
             System.out.println(rs.getString("ename"));
         }
 
+        /*
+         关闭资源
+         */
         rs.close();
         ps.close();
         connection.close();
