@@ -11,6 +11,9 @@ public class OracleDemo {
 
     @Test
     public void test() throws Exception {
+        /*
+        * 测试oracle数据库的连接
+        * */
         Class.forName("oracle.jdbc.driver.OracleDriver");
         Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@192.168.184.10:1521:orcl", "scott", "tiger");
         PreparedStatement ps = connection.prepareStatement("select * from emp where empno =?");
